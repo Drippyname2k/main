@@ -101,7 +101,7 @@ function TodoList() {
 
       <button onClick={voegTaakToe}>Toevoegen</button>
 
-      {/* ── WERK ── */}
+      {/* werk*/}
       <div className="cat-section">
         <div className="cat-header">
           <div className="cat-dot" style={{ background: "#a62fcd" }}></div>
@@ -113,7 +113,7 @@ function TodoList() {
         <ul>{renderLijst("Werk")}</ul>
       </div>
 
-      {/* ── PERSOONLIJK ── */}
+      {/* Persoonlijk  */}
       <div className="cat-section">
         <div className="cat-header">
           <div className="cat-dot" style={{ background: "#36f2aa" }}></div>
@@ -125,7 +125,7 @@ function TodoList() {
         <ul>{renderLijst("Persoonlijk")}</ul>
       </div>
 
-      {/* ── VRIJE TIJD ── */}
+      {/* Vrije tijd */}
       <div className="cat-section">
         <div className="cat-header">
           <div className="cat-dot" style={{ background: "#fd3e81" }}></div>

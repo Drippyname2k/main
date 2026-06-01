@@ -28,7 +28,6 @@ main {
   flex: 1;
 }
 
-/* ── HEADER ── */
 header {
   background: linear-gradient(135deg, #1a0030 0%, #2d0050 50%, #1a0030 100%);
   padding: 30px 40px;
@@ -63,7 +62,6 @@ header h3 {
   letter-spacing: 0.5px;
 }
 
-/* ── TERUGKNOP ── */
 .terug-knop {
   position: absolute;
   top: 50%;
@@ -90,7 +88,6 @@ header h3 {
   box-shadow: 0 0 16px rgba(253, 62, 129, 0.5);
 }
 
-/* ── TITELS ── */
 h1 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 2rem;
@@ -111,7 +108,6 @@ h2 {
   padding-bottom: 8px;
 }
 
-/* ── INVOER ── */
 div {
   max-width: 1000px;
   margin: auto;
@@ -139,7 +135,6 @@ input::placeholder {
   color: #555;
 }
 
-/* ── KNOPPEN ── */
 button {
   background-color: #36f2aa;
   color: black;
@@ -182,7 +177,6 @@ li button {
   padding: 5px 10px;
 }
 
-/* ── CATEGORIE BALKJES ── */
 .cat-section {
   margin-bottom: 20px;
 }
@@ -211,7 +205,6 @@ li button {
   margin-left: auto;
 }
 
-/* ── FOOTER ── */
 footer {
   background-color: #000;
   color: #b1bdc3;
@@ -221,7 +214,7 @@ footer {
   border-top: 1px solid var(--rand);
 }
 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 768px) {
   input,
   select,
