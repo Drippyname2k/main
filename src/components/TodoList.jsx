@@ -77,11 +77,10 @@ function TodoList() {
   }
 
   return (
-
     <div>
-        
+
       <h1>To-Do List</h1>
-            
+
       <input
         type="text"
         value={taak}
@@ -102,14 +101,42 @@ function TodoList() {
 
       <button onClick={voegTaakToe}>Toevoegen</button>
 
-      <h2>Werk</h2>
-      <ul>{renderLijst("Werk")}</ul>
+      {/* ── WERK ── */}
+      <div className="cat-section">
+        <div className="cat-header">
+          <div className="cat-dot" style={{ background: "#a62fcd" }}></div>
+          <h2>Werk</h2>
+          <span className="cat-count">
+            {taken.filter((t) => t.categorie === "Werk" && !t.voltooid).length} open
+          </span>
+        </div>
+        <ul>{renderLijst("Werk")}</ul>
+      </div>
 
-      <h2>Persoonlijk</h2>
-      <ul>{renderLijst("Persoonlijk")}</ul>
+      {/* ── PERSOONLIJK ── */}
+      <div className="cat-section">
+        <div className="cat-header">
+          <div className="cat-dot" style={{ background: "#36f2aa" }}></div>
+          <h2>Persoonlijk</h2>
+          <span className="cat-count">
+            {taken.filter((t) => t.categorie === "Persoonlijk" && !t.voltooid).length} open
+          </span>
+        </div>
+        <ul>{renderLijst("Persoonlijk")}</ul>
+      </div>
 
-      <h2>Vrije tijd</h2>
-      <ul>{renderLijst("Vrije tijd")}</ul>
+      {/* ── VRIJE TIJD ── */}
+      <div className="cat-section">
+        <div className="cat-header">
+          <div className="cat-dot" style={{ background: "#fd3e81" }}></div>
+          <h2>Vrije tijd</h2>
+          <span className="cat-count">
+            {taken.filter((t) => t.categorie === "Vrije tijd" && !t.voltooid).length} open
+          </span>
+        </div>
+        <ul>{renderLijst("Vrije tijd")}</ul>
+      </div>
+
     </div>
   );
 }
