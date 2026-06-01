@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import TodoList from "../components/TodoList.jsx";
+import "../styles/style.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="nl">
+  <body>
+    <header>
+    <img src="/VRC-logo.png" alt="VRCafe Haarlem logo" width="150" />
+      <h1>VRCafe Takenlijst</h1>
+	  <h3> Kan je alle taken niet onthouden/bijhouden? Schijf ze hier gerust op! </h3>
+    </header>
+
+    <main>
+      <section>
+        <TodoList client:load />
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 VRCafe Haarlem</p>
+    </footer>
+  </body>
+</html>
