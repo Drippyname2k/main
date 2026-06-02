@@ -1,3 +1,4 @@
+//Dit is de pagina voor een to-do list voor VR CAfe haarlem.
 import { useState, useEffect } from "react";
 
 const categorieen = ["Werk", "Persoonlijk", "Vrije tijd"];
