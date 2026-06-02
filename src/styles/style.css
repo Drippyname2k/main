@@ -24,6 +24,7 @@ body {
   flex-direction: column;
 }
 
+/* met flex 1 staat het op de basisgrootte */
 main {
   flex: 1;
 }
@@ -150,7 +151,7 @@ button:hover {
   color: white;
 }
 
-/* ── TAKENLIJST ── */
+/* takenlijst */
 ul {
   list-style: none;
   padding: 0;
@@ -192,11 +193,9 @@ li button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
 .cat-count {
-  font-size: 0.72rem;
   color: #555;
   background: #161616;
   border: 1px solid #222;
